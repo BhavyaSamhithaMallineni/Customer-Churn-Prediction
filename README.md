@@ -1,4 +1,4 @@
-# Customer Churn Prediction - README
+# Customer Churn Prediction 
 
 ## 1. Introduction
 Customer churn prediction is a crucial aspect of business analytics that helps companies identify customers who are likely to stop using their products or services. By analyzing historical customer data, businesses can proactively take measures to retain customers and improve their overall engagement strategies.
