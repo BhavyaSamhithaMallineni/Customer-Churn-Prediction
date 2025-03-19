@@ -26,34 +26,25 @@ The dataset consists of the following key features:
 - **Service Usage**: Internet Service, Online Security, Tech Support, Streaming TV & Movies
 - **Financial Information**: Monthly Charges, Total Charges
 - **Target Variable**: Churn (Yes/No)
-![Churn Distribution](newplot.png)
+![Churn Distribution](newplot-5.png)
 
 
 ### Insights from Visualizations
 1. **Churn Distribution by Gender**
    - The donut chart shows the distribution of churn across male and female customers.
    - The churn rate appears to be relatively balanced across genders, indicating that gender alone may not be a strong predictor of churn.
+   ![Churn Distribution by Gender]('Gender_Visualization'.png)
 
 2. **Distribution of Monthly Charges by Churn**
    - The KDE plot indicates that customers with lower monthly charges have a lower churn rate, while those with mid-range to high monthly charges exhibit higher churn.
    - Customers in the range of $60 to $100 monthly charges have a higher churn tendency.
-
-3. **Distribution of Total Charges by Churn**
-   - Customers with lower total charges seem to have a higher churn rate.
-   - This suggests that newer customers (who have accumulated fewer total charges) may be at higher risk of churn.
+   ![Churn Distribution by Monthly Charges](newplot.png)
 
 4. **Feature Correlation with Churn**
    - Tenure is negatively correlated with churn, meaning longer-tenured customers are less likely to churn.
    - Monthly charges and paperless billing are positively correlated with churn, indicating that higher monthly bills and digital invoicing may be factors in customer dissatisfaction.
    - Dependents and partners show negative correlations, suggesting customers with family commitments may be more loyal.
-
-5. **Correlation Heatmaps**
-   - Service-related features like streaming services and tech support have moderate positive correlations with churn.
-   - Customers using multiple add-on services (e.g., online security, streaming, and tech support) are more likely to churn, likely due to increased costs.
-
-6. **Optimal Hyperparameters**
-   - **K-Nearest Neighbors (KNN)**: The optimal number of neighbors stabilizes around 20, where the model achieves maximum performance.
-   - **Random Forest**: The model improves as the number of trees increases, plateauing at around 80 trees.
+  ![Feature Correlation with Churn](FeatureCorrelation.png)
 
 ## 3. Exploratory Data Analysis (EDA) and Feature Engineering
 ### EDA Techniques Applied
@@ -87,10 +78,9 @@ Each model was evaluated using standard performance metrics:
 - **ROC-AUC Score**: Assesses the model’s ability to distinguish between churn and non-churn.
 
 ### Best Performing Models
-1. **Adaboost**: Achieved the highest accuracy (81.23%) and best F1-score (0.60), making it the top-performing model.
-2. **Voting Classifier**: Close performance to Adaboost with an F1-score of 0.599 and high accuracy (80.85%).
+1. **Adaboost**: Achieved the highest accuracy (84.45%) making it the top-performing model.
+2. **Voting Classifier**: Close performance to Adaboost high accuracy .
 3. **Gradient Boosting**: Performed well with a balanced accuracy and F1-score, making it a strong choice for prediction.
 
 The best-performing model was selected based on the highest F1-score and AUC-ROC values, ensuring optimal predictive performance.
 
-# Customer-Churn-Prediction
